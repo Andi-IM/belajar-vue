@@ -8,6 +8,7 @@ import { RouterLink } from 'vue-router'
     <div id="menu" class="flex flex-row gap-4">
       <router-link class="hover:text-blue-600" to="/">Home</router-link>
       <router-link class="hover:text-blue-600" to="/about">About</router-link>
+      <router-link class="hover:text-blue-600" to="/shop">Shop</router-link>
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <script>
 import TodoItem from './TodoItem.vue'
 export default {
-  name: 'Todo',
+  name: "todos-view",
   components: {
     TodoItem,
   },
@@ -46,7 +46,7 @@ export default {
       </button>
     </div>
     <div class="flex flex-col gap-2">
-      <div v-for="(todoItem, index) in todos">
+      <div v-for="(todoItem, index) in todos" v-bind:key="index">
         <TodoItem
           :todo-item="todoItem"
           :index="index"
